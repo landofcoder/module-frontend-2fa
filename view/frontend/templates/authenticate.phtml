@@ -3,9 +3,9 @@
         <div class="block block-customer-login" style="width: 100%">
             <div class="block-content">
                 <div class="block block-customer-login" style="width: 48%">
-                    <p><?php echo __('Open your 2FA app (for example Google Authenticator or Authy) and enter the 6-digit code to log in.'); ?></p>
+                    <div class="block-help-content"><?php echo __('Open your 2FA app (for example Google Authenticator or Authy) and enter the 6-digit code to log in.'); ?></div>
                     <div class="block-content">
-                        <form class="form contact" action="<?php /* @escapeNotVerified */ echo $block->getAuthenticateFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
+                        <form class="form auth-setup" action="<?php /* @escapeNotVerified */ echo $block->getAuthenticateFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
                             <input type="hidden" name="secret" value="<?php /* @escapeNotVerified */ echo $block->getSecretCode(); ?>" />
                             <fieldset class="fieldset">
                                 <div class="field name required">

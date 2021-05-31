@@ -8,9 +8,9 @@
     <?php else: ?>
     <img src="<?php /* @escapeNotVerified */ echo $block->getQrCodeBase64Image(); ?>" alt="2FA Authenticator">
     <div class="block block-customer-login" style="width: 48%">
-        <p><?php echo __('Download a 2FA app on your phone to scan the QR code and get the authentication code, for example Google Authenticator or Authy.'); ?></p>
+        <div class="block-help-content"><?php echo __('Download a 2FA app on your phone to scan the QR code and get the authentication code, for example Google Authenticator or Authy.'); ?></div>
         <div class="block-content">
-            <form class="form contact" action="<?php /* @escapeNotVerified */ echo $block->getSetupFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
+            <form class="form auth-setup" action="<?php /* @escapeNotVerified */ echo $block->getSetupFormAction(); ?>" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
                 <input type="hidden" name="secret" value="<?php /* @escapeNotVerified */ echo $block->getSecretCode(); ?>" />
                 <fieldset class="fieldset">
                     <div class="field name required">

@@ -1,6 +1,6 @@
 # Lof_Frontend2FA
 
-This extension is based on [Neyamtux_Authenticator](https://github.com/juashyam/2-Factor-Authentication/), which offers 2FA for the backend.
+This extension is based on [Lof_Authenticator](https://github.com/landofcoder/module-2-factor-authentication/), which offers 2FA for the backend.
 
 ## Features
 - Ability to force frontend 2FA for specific customer groups;
@@ -12,9 +12,9 @@ This extension is based on [Neyamtux_Authenticator](https://github.com/juashyam/
 ## Installation
 
 ```
-composer require lof/frontend2fa
+composer require landofcoder/module-frontend-2fa
 php bin/magento module:enable Lof_Frontend2FA
-php bin/magento module:enable Neyamtux_Authenticator
+php bin/magento module:enable Lof_Authenticator
 php bin/magento setup:upgrade
 ```
 
@@ -32,21 +32,72 @@ $customerSession->set2faSuccessful(true);
 
 Setup page (in My Account)
 
-![image](https://user-images.githubusercontent.com/431360/53883116-69cdd280-4018-11e9-89a2-c1a471c51d64.png)
+![image](./assets/setup_page.png)
 
 2FA authentication after logging in when setup is done
 
-![image](https://user-images.githubusercontent.com/431360/53883181-98e44400-4018-11e9-8bc0-d98676e3527a.png)
+![image](./assets/setup_done.png)
 
 Configuration in backend
 
-![image](https://user-images.githubusercontent.com/431360/53885104-3b9ec180-401d-11e9-98bc-ec1a2df3fa6c.png)
+![image](./assets/config_backend.png)
 
 2FA reset button in backend
 
-![image](https://user-images.githubusercontent.com/431360/53883268-ce892d00-4018-11e9-84f6-aa1c0fc2e34a.png)
+![image](./assets/reset_button.png)
+
+## Authors
+
+Landofcoder
+
+## Donation
+
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/paypalme/allorderdesk)
+
+
+**Our Magento 2 Extensions List**
+* [Megamenu for Magento 2](https://landofcoder.com/magento-2-mega-menu-pro.html/)
+
+* [Page Builder for Magento 2](https://landofcoder.com/magento-2-page-builder.html/)
+
+* [Magento 2 Marketplace - Multi Vendor Extension](https://landofcoder.com/magento-2-marketplace-extension.html/)
+
+* [Magento 2 Multi Vendor Mobile App Builder](https://landofcoder.com/magento-2-multi-vendor-mobile-app.html/)
+
+* [Magento 2 Form Builder](https://landofcoder.com/magento-2-form-builder.html/)
+
+* [Magento 2 Reward Points](https://landofcoder.com/magento-2-reward-points.html/)
+
+* [Magento 2 Flash Sales - Private Sales](https://landofcoder.com/magento-2-flash-sale.html)
+
+* [Magento 2 B2B Packages](https://landofcoder.com/magento-2-b2b-extension-package.html)
+
+* [Magento 2 One Step Checkout](https://landofcoder.com/magento-2-one-step-checkout.html/)
+
+* [Magento 2 Customer Membership](https://landofcoder.com/magento-2-membership-extension.html/)
+
+* [Magento 2 Checkout Success Page](https://landofcoder.com/magento-2-checkout-success-page.html/)
+
+
+**Featured Magento Services**
+
+* [Customization Service](https://landofcoder.com/magento-2-create-online-store/)
+
+* [Magento 2 Support Ticket Service](https://landofcoder.com/magento-support-ticket.html/)
+
+* [Magento 2 Multi Vendor Development](https://landofcoder.com/magento-2-create-marketplace/)
+
+* [Magento Website Maintenance Service](https://landofcoder.com/magento-2-customization-service/)
+
+* [Magento Professional Installation Service](https://landofcoder.com/magento-2-installation-service.html)
+
+* [Customization Service](https://landofcoder.com/magento-customization-service.html)
+
 
 ## License
 
 This project is licensed under the MIT License
+
 

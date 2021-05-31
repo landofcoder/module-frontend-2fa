@@ -22,7 +22,7 @@ namespace Lof\Frontend2FA\Model;
 
 use Endroid\QrCode\QrCode;
 
-class GoogleAuthenticatorService extends \Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator
+class GoogleAuthenticatorService extends \Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator
 {
     /**
      * Get QR Code Image.

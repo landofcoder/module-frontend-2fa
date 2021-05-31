@@ -28,7 +28,7 @@ use Magento\Framework\App\RequestInterface;
 class Authenticate extends \Magento\Framework\App\Action\Action
 {
     /**
-     * @var \Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator
+     * @var \Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator
      */
     public $googleAuthenticator;
     /**
@@ -43,13 +43,13 @@ class Authenticate extends \Magento\Framework\App\Action\Action
     /**
      * @param \Magento\Framework\App\Action\Context                      $context
      * @param \Magento\Customer\Model\Session                            $customerSession
-     * @param \Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator $googleAuthenticator
+     * @param \Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator $googleAuthenticator
      * @param SecretFactory                                              $secretFactory
      */
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
         \Magento\Customer\Model\Session $customerSession,
-        \Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator $googleAuthenticator,
+        \Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator $googleAuthenticator,
         SecretFactory $secretFactory
     ) {
         $this->_customerSession = $customerSession;

@@ -26,9 +26,9 @@ use Magento\Catalog\Model\Session as CatalogSession;
 use Magento\Customer\Model\Session;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Store\Model\StoreManagerInterface;
-use Neyamtux\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
+use Lof\Authenticator\Lib\PHPGangsta\GoogleAuthenticator;
 
-class Authenticator extends \Neyamtux\Authenticator\Block\Authenticator
+class Authenticator extends \Lof\Authenticator\Block\Authenticator
 {
     /**
      * @var TfaFrontendCheck

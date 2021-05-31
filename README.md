@@ -38,6 +38,7 @@ Setup page (in My Account)
 
 ![image](./assets/setup_done.png)
 
+
 Configuration in backend
 
 ![image](./assets/config_backend.png)

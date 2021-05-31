@@ -1,4 +1,4 @@
-# Elgentos_Frontend2FA
+# Lof_Frontend2FA
 
 This extension is based on [Neyamtux_Authenticator](https://github.com/juashyam/2-Factor-Authentication/), which offers 2FA for the backend.
 
@@ -12,8 +12,8 @@ This extension is based on [Neyamtux_Authenticator](https://github.com/juashyam/
 ## Installation
 
 ```
-composer require elgentos/frontend2fa
-php bin/magento module:enable Elgentos_Frontend2FA
+composer require lof/frontend2fa
+php bin/magento module:enable Lof_Frontend2FA
 php bin/magento module:enable Neyamtux_Authenticator
 php bin/magento setup:upgrade
 ```

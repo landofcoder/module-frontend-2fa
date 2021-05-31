@@ -1,8 +1,26 @@
 <?php
+/**
+ * Landofcoder
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Frontend2FA
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
+ */
+namespace Lof\Frontend2FA\Observer;
 
-namespace Elgentos\Frontend2FA\Observer;
-
-use Elgentos\Frontend2FA\Model\SecretFactory;
+use Lof\Frontend2FA\Model\SecretFactory;
 use Magento\Customer\Model\Session;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Response\Http;
@@ -12,11 +30,11 @@ use Magento\Framework\UrlInterface;
 
 class TfaFrontendCheck implements ObserverInterface
 {
-    const ELGENTOS_AUTHENTICATOR_GENERAL_ENABLE = 'elgentos_authenticator/general/enable';
-    const ELGENTOS_AUTHENTICATOR_GENERAL_FORCED_GROUPS = 'elgentos_authenticator/general/forced_groups';
+    const ELGENTOS_AUTHENTICATOR_GENERAL_ENABLE = 'lof_authenticator/general/enable';
+    const ELGENTOS_AUTHENTICATOR_GENERAL_FORCED_GROUPS = 'lof_authenticator/general/forced_groups';
 
-    const FRONTEND_2_FA_ACCOUNT_SETUP_ROUTE = 'elgentos_frontend2fa_frontend_route_account_setup';
-    const FRONTEND_2_FA_ACCOUNT_AUTHENTICATE_ROUTE = 'elgentos_frontend2fa_frontend_route_account_authenticate';
+    const FRONTEND_2_FA_ACCOUNT_SETUP_ROUTE = 'lof_frontend2fa_frontend_route_account_setup';
+    const FRONTEND_2_FA_ACCOUNT_AUTHENTICATE_ROUTE = 'lof_frontend2fa_frontend_route_account_authenticate';
     const CUSTOMER_ACCOUNT_LOGOUT_ROUTE = 'customer_account_logout';
 
     const FRONTEND_2_FA_ACCOUNT_SETUP_PATH = 'frontend2fa/account/setup';

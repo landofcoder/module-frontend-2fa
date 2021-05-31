@@ -1,14 +1,28 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Landofcoder
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/terms
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Frontend2FA
+ * @copyright  Copyright (c) 2021 Landofcoder (https://www.landofcoder.com/)
+ * @license    https://landofcoder.com/terms
  */
-
 // @codingStandardsIgnoreFile
 
-namespace Elgentos\Frontend2FA\Controller\Account;
+namespace Lof\Frontend2FA\Controller\Account;
 
-use Elgentos\Frontend2FA\Model\SecretFactory;
+use Lof\Frontend2FA\Model\SecretFactory;
 use Magento\Framework\App\RequestInterface;
 
 class Authenticate extends \Magento\Framework\App\Action\Action

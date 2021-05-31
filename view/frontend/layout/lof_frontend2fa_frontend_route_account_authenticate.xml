@@ -3,7 +3,7 @@
     <update handle="customer_account"/>
     <body>
         <referenceContainer name="content">
-            <block template="Elgentos_Frontend2FA::authenticate.phtml" class="Elgentos\Frontend2FA\Block\Authenticator" name="authenticate" cacheable="false" />
+            <block template="Lof_Frontend2FA::authenticate.phtml" class="Lof\Frontend2FA\Block\Authenticator" name="authenticate" cacheable="false" />
         </referenceContainer>
         <referenceBlock name="root">
             <action method="setHeaderTitle">

@@ -8,7 +8,7 @@
     </argument>
     <settings>
         <buttons>
-            <button name="add_sms" class="Elgentos\Frontend2FA\Block\Adminhtml\ResetButton" />
+            <button name="add_sms" class="Lof\Frontend2FA\Block\Adminhtml\ResetButton" />
         </buttons>
     </settings>
 </form>
